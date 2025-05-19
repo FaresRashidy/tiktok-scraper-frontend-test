@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Video Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="download-section">
+      <div class="download-wrapper">
+        <header>
+          <div class="logo-circle">🎵</div>
+          <h1>TikTok Downloader</h1>
+          <p>Download TikTok videos in SD and HD quality</p>
+        </header>
+        <main>
+          <div class="input-area">
+            <input
+              type="text"
+              id="url"
+              placeholder="Paste TikTok video link..."
+            />
+            <button onclick="download()">Fetch</button>
+          </div>
+          <div id="result" class="message"></div>
+          <div id="preview" class="preview hidden">
+            <div class="info">
+              <img id="cover" alt="Video cover" />
+              <h2 id="videoTitle"></h2>
+            </div>
+            <div class="button-group">
+              <button onclick="downloadSD()">Download SD</button>
+              <button onclick="downloadHD()">Download HD</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- Update the features section and footer in your index.html -->
+    <section class="features-section">
+      <div class="features-wrapper">
+        <h2>Why use our TikTok Downloader?</h2>
+        <div class="features-list">
+          <div class="feature-card">
+            <span class="feature-icon">⚡</span>
+            <h3>Fast & Free</h3>
+            <h4>No Waiting, No Fees</h4>
+            <p>
+              Download TikTok videos instantly with no registration or hidden
+              costs. Our service is always free and lightning fast, so you can
+              save your favorite videos in seconds.
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔒</span>
+            <h3>Safe & Secure</h3>
+            <h4>Privacy First</h4>
+            <p>
+              We never store your downloads or links. No watermarks, no spam,
+              and your privacy is always protected. Enjoy a clean, ad-free
+              experience every time.
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📱</span>
+            <h3>Works on Any Device</h3>
+            <h4>Mobile, Tablet, Desktop</h4>
+            <p>
+              Use our downloader on any device—phone, tablet, or computer. No
+              app or extension needed, just your browser!
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">💖</span>
+            <h3>HD & SD Quality</h3>
+            <h4>Choose Your Format</h4>
+            <p>
+              Download videos in both SD and HD quality. Perfect for sharing,
+              editing, or keeping for offline viewing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">🎵 TikTok Downloader</div>
+        <div class="footer-links">
+          <a href="#">Home</a> | <a href="#">Features</a> |
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-info">
+          &copy; 2025 TikTok Downloader. Not affiliated with TikTok.<br />
+          Made with <span style="color: #ff6fcb">&#10084;</span> for educational
+          purposes.<br />
+          <small>
+            This website does not host any copyrighted content. All videos are
+            the property of their respective owners.
+          </small>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
