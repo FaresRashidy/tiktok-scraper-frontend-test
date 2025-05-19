@@ -40,9 +40,15 @@ window.download = async function () {
 };
 
 window.downloadSD = () =>
-  handleDownload(videoData?.video, videoData?.title + "_SD.mp4");
+  handleDownload(
+    videoData?.video,
+    videoData?.title.split("#")[0].slice(0, -1) + "_SD.mp4"
+  );
 window.downloadHD = () =>
-  handleDownload(videoData?.video_hd, videoData?.title + "_HD.mp4");
+  handleDownload(
+    videoData?.video_hd,
+    videoData?.title.split("#")[0].slice(0, -1) + "_HD.mp4"
+  );
 
 function sanitizeFileName(name) {
   return name.replace(/[\\/:*?"<>|]/g, "").trim();
